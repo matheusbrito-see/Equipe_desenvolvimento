@@ -53,4 +53,14 @@ class Listaplanejamento(models.Model):
     data_fechamento = models.DateTimeField(null=True, blank=True)
     
     def __str__(self):
-        return f"{self.Usuario} - {self.descricao}"
+        return f"Planejamento {self.id} - {self.status}"
+    
+class ItensLista(models.Model):
+    lista = models.ForeignKey(Listaplanejamento, on_delete=models.CASCADE)
+    item = models.ForeignKey(item, on_delete=models.CASCADE)
+    quantidade = models.IntegerField()
+    preco_unitario = models.DecimalField(max_digits=10, decimal_places=2)
+    observacao = models.TextField(blanik=True, null=True)
+    def __str__(self):
+        return f"`{self.item} - {self.quantidade}"
+    
