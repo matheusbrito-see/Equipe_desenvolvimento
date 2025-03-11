@@ -53,4 +53,4 @@ class Listaplanejamento(models.Model):
     data_fechamento = models.DateTimeField(null=True, blank=True)
     
     def __str__(self):
-        return f"{self.Usuario} - {self.descricao}"()
+        return f"{self.Usuario} - {self.descricao}"
