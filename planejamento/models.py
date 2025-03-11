@@ -60,7 +60,7 @@ class ItensLista(models.Model):
     item = models.ForeignKey(item, on_delete=models.CASCADE)
     quantidade = models.IntegerField()
     preco_unitario = models.DecimalField(max_digits=10, decimal_places=2)
-    observacao = models.TextField(blanik=True, null=True)
+    observacao = models.TextField(blank=True, null=True)
     def __str__(self):
         return f"`{self.item} - {self.quantidade}"
     
