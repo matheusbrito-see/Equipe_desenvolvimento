@@ -1,0 +1,64 @@
+*   [33m98f19b9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mTalita[m[33m)[m Merge branch 'main' of https://github.com/matheusbrito-see/Equipe_desenvolvimento into Talita
+[31m|[m[32m\[m  
+[31m|[m * [33m40af57c[m commit
+[31m|[m * [33m55fc164[m correção do codigo na main
+* [32m|[m [33mc18337a[m alteração do models e das configurações do celery
+* [32m|[m [33mc8f1731[m mudanças para o wsl
+* [32m|[m [33m7d6d421[m Merge branch 'main' of https://github.com/matheusbrito-see/Equipe_desenvolvimento into Talita
+[33m|[m[32m\[m[32m|[m 
+[33m|[m *   [33m9d01bbd[m correção de merge
+[33m|[m [35m|[m[36m\[m  
+[33m|[m [35m|[m * [33ma816102[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmain[m[33m)[m Configuração do Celery e Redis
+[33m|[m * [36m|[m   [33m71e6157[m correção merge
+[33m|[m [1;31m|[m[1;32m\[m [36m\[m  
+[33m|[m [1;31m|[m * [36m|[m [33m88f227c[m adicao serializer e views
+[33m|[m * [1;32m|[m [36m|[m   [33m4ed9578[m Merge branch 'Talita'
+[33m|[m [1;33m|[m[1;34m\[m [1;32m\[m [36m\[m  
+[33m|[m * [1;34m|[m [1;32m|[m [36m|[m [33mdb4b8e7[m configuracao bootstrap no ambiente
+[33m|[m * [1;34m|[m [1;32m|[m [36m|[m [33m9ee9fde[m configuração jwt
+[33m|[m * [1;34m|[m [1;32m|[m [36m|[m   [33maed1b2e[m Merge branch 'main' of https://github.com/matheusbrito-see/Equipe_desenvolvimento into Matheus
+[33m|[m [1;35m|[m[1;32m\[m [1;34m\[m [1;32m\[m [36m\[m  
+[33m|[m [1;35m|[m [1;32m|[m [1;34m|[m[1;32m/[m [36m/[m  
+[33m|[m [1;35m|[m [1;32m|[m[1;32m/[m[1;34m|[m [36m|[m   
+[33m|[m [1;35m|[m * [1;34m|[m [36m|[m [33mdcb3f9a[m merge
+[33m|[m [1;35m|[m * [1;34m|[m [36m|[m   [33m8eba140[m Merge branch 'Marcello_1'
+[33m|[m [1;35m|[m [31m|[m[32m\[m [1;34m\[m [36m\[m  
+[33m|[m [1;35m|[m [31m|[m * [1;34m|[m [36m|[m [33m8b8ef06[m adicionei o banco de dados
+[33m|[m [1;35m|[m [31m|[m * [1;34m|[m [36m|[m [33m2fc2956[m Create wsgi.cpython-313.pyc
+[33m|[m [1;35m|[m [31m|[m * [1;34m|[m [36m|[m   [33m2b0411a[m Merge branch 'Marcello_1' of https://github.com/matheusbrito-see/Equipe_desenvolvimento into Marcello_1
+[33m|[m [1;35m|[m [31m|[m [33m|[m[34m\[m [1;34m\[m [36m\[m  
+[33m|[m [1;35m|[m [31m|[m [33m|[m * [1;34m|[m [36m|[m [33m22d2fbc[m Update requirements.txt
+[33m|[m [1;35m|[m [31m|[m * [34m|[m [1;34m|[m [36m|[m [33mbfd7003[m sql banco
+[33m|[m [1;35m|[m [31m|[m [34m|[m[34m/[m [1;34m/[m [36m/[m  
+[33m|[m [1;35m|[m [31m|[m * [1;34m|[m [36m|[m [33m5e2314a[m Update models.py
+[33m|[m [1;35m|[m [31m|[m * [1;34m|[m [36m|[m [33m7e2fde3[m Update models.py
+[33m|[m [1;35m|[m [31m|[m * [1;34m|[m [36m|[m [33md9873df[m Update models.py
+[33m|[m [1;35m|[m [31m|[m * [1;34m|[m [36m|[m [33m103bb19[m Create models.py
+[33m|[m [1;35m|[m * [34m|[m [1;34m|[m [36m|[m   [33m3aa0ffc[m Merge branch 'Matheus'
+[33m|[m [1;35m|[m [35m|[m[36m\[m [34m\[m [1;34m\[m [36m\[m  
+[33m|[m [1;35m|[m * [36m\[m [34m\[m [1;34m\[m [36m\[m   [33m0846796[m Merge branch 'master' of https://github.com/matheusbrito-see/Equipe_desenvolvimento
+[33m|[m [1;35m|[m [1;31m|[m[36m\[m [36m\[m [34m\[m [1;34m\[m [36m\[m  
+[33m|[m [1;35m|[m [1;31m|[m [36m|[m [36m|[m[36m_[m[34m|[m[36m_[m[1;34m|[m[36m/[m  
+[33m|[m [1;35m|[m [1;31m|[m [36m|[m[36m/[m[36m|[m [34m|[m [1;34m|[m   
+[33m|[m [1;35m|[m [1;31m|[m * [36m|[m [34m|[m [1;34m|[m [33mfdb0434[m correção requeriment
+[33m|[m [1;35m|[m [1;31m|[m [34m|[m [36m|[m[34m/[m [1;34m/[m  
+[33m|[m [1;35m|[m [1;31m|[m [34m|[m[34m/[m[36m|[m [1;34m|[m   
+[33m|[m * [1;31m|[m [34m|[m [36m|[m [1;34m|[m [33m98eadf1[m Merge branch 'main' of https://github.com/matheusbrito-see/Equipe_desenvolvimento into Matheus
+[33m|[m [36m|[m[1;31m\[m[1;31m|[m [34m|[m [36m|[m [1;34m|[m 
+[33m|[m [36m|[m [1;31m|[m[36m_[m[34m|[m[36m/[m [1;34m/[m  
+[33m|[m [36m|[m[36m/[m[1;31m|[m [34m|[m [1;34m|[m   
+[33m|[m [36m|[m * [34m|[m [1;34m|[m [33mf97206b[m Initial commit
+[33m|[m [36m|[m  [34m/[m [1;34m/[m  
+[33m|[m * [34m/[m [1;34m/[m [33maf263e1[m correção_requeriments
+[33m|[m [34m|[m[34m/[m [1;34m/[m  
+* [34m|[m [1;34m|[m   [33m32896a9[m Merge branch 'Talita' of https://github.com/matheusbrito-see/Equipe_desenvolvimento into Talita
+[1;35m|[m[1;34m\[m [34m\[m [1;34m\[m  
+[1;35m|[m [1;34m|[m [34m|[m[1;34m/[m  
+[1;35m|[m [1;34m|[m[1;34m/[m[34m|[m   
+[1;35m|[m * [34m|[m [33m8bbc5d3[m Redis e Celery com todos os comandos de instalação
+[1;35m|[m * [34m|[m [33m1592f00[m Redis e Celery
+[1;35m|[m [34m|[m[34m/[m  
+* [34m/[m [33m5ce9725[m automação para iniciar o wsl
+[34m|[m[34m/[m  
+* [33m444ff64[m arquivo_env_e_requeriments
+* [33m036c56f[m arvore_projeto
