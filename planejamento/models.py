@@ -42,14 +42,14 @@ class Item(models.Model):
     codigo = models.CharField(max_length=50, unique=True)
     descricao = models.TextField()
     tipo = models.ForeignKey(TipoMaterial, on_delete=models.CASCADE)
-    AreaUtilizacao = models.ForeignKey(AreaUtilizacao, on_delete=models.CASCADE)
-    unidade-medida = models.ForeignKey(UnidadeMedia, on_delete=models.CASCADE)
+    area_utilizacao = models.ForeignKey(AreaUtilizacao, on_delete=models.CASCADE)
+    unidade_medida = models.ForeignKey(UnidadeMedia, on_delete=models.CASCADE)
     
     def __str__(self):
         return f"s{self.codigo} - {self.descricao}"
     
-class Listaplanejamento(models.Model):
-    Usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+class ListaPlanejamento(models.Model):
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     setor = models.ForeignKey(Setor, on_delete=models.CASCADE)
     descricao = models.TextField()
     data_criacao = models.DateTimeField(auto_now_add=True)
@@ -60,7 +60,7 @@ class Listaplanejamento(models.Model):
         return f"Planejamento {self.id} - {self.status}"
     
 class ItensLista(models.Model):
-    lista = models.ForeignKey(Listaplanejamento, on_delete=models.CASCADE)
+    lista = models.ForeignKey(ListaPlanejamento, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     quantidade = models.IntegerField()
     preco_unitario = models.DecimalField(max_digits=10, decimal_places=2)
