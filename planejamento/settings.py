@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'usuarios',
     'setores',
     'itens',
-    'planejamento_compras',
+    'planejamento',
     'celery'
 ]
 
