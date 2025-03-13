@@ -12,12 +12,15 @@ class Setores(models.Model):
     
 class Usuario(models.Model):
     nome = models.CharField(max_length=255)
-    email = models.EmailField(max_length=255)
+    email = models.EmailField(max_length=255, unique=True)  # Adicionei unique=True para evitar emails duplicados
     senha_hash = models.CharField(max_length=255)
-    perfil = models.CharField(max_length=100, default="padrao")
+    perfil = models.CharField(max_length=100, default="padrao")  
     setor = models.ForeignKey(Setores, on_delete=models.CASCADE)
     ativo = models.BooleanField(default=True)
     ultimo_login = models.DateTimeField(default=timezone.now)
+    
+    def __str__(self):
+        return self.nome
     
     def __str__(self):
         return self.nome
