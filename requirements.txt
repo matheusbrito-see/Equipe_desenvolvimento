@@ -2,5 +2,6 @@ django
 djangorestframework
 pep8
 python-dotenv
-pyscopg2
-psycop2-binary
+psycopg2
+psycopg2-binary
+djangorestframework-simplejwt
