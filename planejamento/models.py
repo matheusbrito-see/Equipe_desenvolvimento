@@ -43,7 +43,7 @@ class Item(models.Model):
     descricao = models.TextField()
     tipo = models.ForeignKey(TipoMaterial, on_delete=models.CASCADE)
     AreaUtilizacao = models.ForeignKey(AreaUtilizacao, on_delete=models.CASCADE)
-    unidade-medida = models.ForeignKey(UnidadeMedia, on_delete=models.CASCADE)
+    unidade_medida = models.ForeignKey(UnidadeMedia, on_delete=models.CASCADE)
     
     def __str__(self):
         return f"s{self.codigo} - {self.descricao}"
