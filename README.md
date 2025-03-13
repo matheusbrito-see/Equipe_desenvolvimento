@@ -35,6 +35,10 @@ PostgreSQL:
 Ferramentas de compilação do WSL:
 - sudo apt update && sudo apt install build-essential -y
 
+Para iniciar o projeto (diariamente)
+- no terminal digita wsl
+- ativar a venv: source venv/bin/activate
+
 Django: 
 - pip install -r requirements.txt
 - pip install django
