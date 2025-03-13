@@ -89,7 +89,8 @@ DATABASES = {
         'USER': os.getenv('DATABASE_USER'),
         'PASSWORD': os.getenv('DATABASE_PASSWORD'),
         'HOST': os.getenv('DATABASE_HOST'),
-    }
+        
+        }
 }
 
 
@@ -111,11 +112,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES':
-        ('rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
-}
+#Celery
+
+CELERY_BROKER_URL = 'redis://10.83.0.88:6379/0',
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
