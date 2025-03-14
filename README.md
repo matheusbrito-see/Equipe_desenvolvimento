@@ -35,10 +35,6 @@ PostgreSQL:
 Ferramentas de compilação do WSL:
 - sudo apt update && sudo apt install build-essential -y
 
-Para iniciar o projeto (diariamente)
-- no terminal digita wsl
-- ativar a venv: source venv/bin/activate
-
 Django: 
 - pip install -r requirements.txt
 - pip install django
@@ -46,7 +42,46 @@ Django:
 - pip install python-dotenv
 - pip install psycopg2-binary
 
+Para iniciar o projeto (diariamente)
+- no terminal digita wsl
+- ativar a venv: source venv/bin/activate
+
 Rodar o servidor: 
 - python3 manage.py runserver
 
+
+# Instalação do Docker dentro da WSL
+
+Abra o terminal do WSL e execute os seguintes comandos para instalar o Docker:
+
+Atualize os pacotes do sistema:
+sudo apt update
+sudo apt upgrade
+
+Instale as dependências necessárias:
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+Adicione a chave GPG oficial do Docker:
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+Adicione o repositório Docker:
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+Atualize o repositório e instale o Docker:
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+
+Inicie o serviço Docker:
+sudo service docker start
+
+Teste a instalação:
+sudo docker --version
+Isso deve exibir a versão do Docker instalada.
+
+Adicionar seu usuário ao grupo docker para poder executar comandos Docker sem usar sudo:
+sudo usermod -aG docker $USER
+Depois disso, feche e abra o terminal novamente ou faça logout e login.
+
+Passo 3: Usando o Docker no WSL
+Agora que o Docker está instalado, você pode usar o Docker dentro do WSL como se estivesse em um ambiente Linux tradicional. 
 
