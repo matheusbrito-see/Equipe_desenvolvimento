@@ -42,11 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'planejamento',
-    'usuarios',
+    'usuario',
     'setores',
-    'itens',
-    'planejamento_compras',
-    'celery',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

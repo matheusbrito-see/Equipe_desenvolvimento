@@ -4,4 +4,3 @@ pep8
 python-dotenv
 psycopg2
 psycopg2-binary
-djangorestframework-simplejwt
