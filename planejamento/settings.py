@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+from django.utils.translation import gettext_lazy as _
+from django.utils import timezone
 from pathlib import Path
 from dotenv import load_dotenv
 from datetime import timedelta
@@ -112,6 +114,14 @@ DATABASES = {
         }
 }
 
+LANGUAGES = [
+    ('pt-br', _('Português (Brasil)')),
+    ('en', _('Inglês')),
+]
+
+locale_paths = [
+    os.path.join(BASE_DIR, 'locale'),
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -148,6 +158,8 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+USE_L10N = True  
 
 
 # Static files (CSS, JavaScript, Images)
