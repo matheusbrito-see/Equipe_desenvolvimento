@@ -85,3 +85,8 @@ Depois disso, feche e abra o terminal novamente ou faça logout e login.
 Passo 3: Usando o Docker no WSL
 Agora que o Docker está instalado, você pode usar o Docker dentro do WSL como se estivesse em um ambiente Linux tradicional. 
 
+Para abrir a página que administra os containers, digita no terminal:
+sudo systemctl status docker
+Se não estiver rodando, coloca:
+sudo systemctl start docker
+
