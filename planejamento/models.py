@@ -6,7 +6,6 @@ class Setores(models.Model):
     descricao = models.CharField(max_length=100)
     setor_pai = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True)
     ativo = models.BooleanField(default=True)
-
     
     def __str__(self):
         return self.nome
@@ -26,7 +25,6 @@ class Usuario(models.Model):
     def __str__(self):
         return self.nome
     
-
     def __str__(self):
         return self.nome
     
@@ -34,8 +32,6 @@ class Tipo_material(models.Model):
     nome_tipo = models.CharField(max_length=255)
     status = models.BooleanField(default=True, verbose_name="Status")
     
-    status = models.BooleanField(default=True)
-
     def __str__(self):
         return self.nome_tipo
     
@@ -43,8 +39,6 @@ class Area_utilizacao(models.Model):
     nome_area = models.CharField(max_length=255)
     status = models.BooleanField(default=True, verbose_name="Status")
     
-    status = models.BooleanField(default=True)
-
     def __str__(self):
         return self.nome_area
     
@@ -52,10 +46,7 @@ class Unidade_medida(models.Model):
     descricao_unidade = models.CharField(max_length=255)
     status = models.BooleanField(default=True, verbose_name="Status")
     
-    status = models.BooleanField(default=True)
-
     def __str__(self):
-        return self.descricao_unidade
         return self.descricao_unidade
     
 class Itens(models.Model):
@@ -65,20 +56,12 @@ class Itens(models.Model):
     area = models.ForeignKey(Area_utilizacao, on_delete=models.CASCADE, null=True, blank=True)
     unidade_medida = models.ForeignKey(Unidade_medida, on_delete=models.CASCADE)
     
-    tipo = models.ForeignKey(TipoMaterial, on_delete=models.CASCADE)
-    areaUtilizacao = models.ForeignKey(AreaUtilizacao, on_delete=models.CASCADE)
-    unidade_medida = models.ForeignKey(UnidadeMedia, on_delete=models.CASCADE)
-
     def __str__(self):
-        return f"{self.codigo} - {self.descricao}"
         return f"{self.codigo} - {self.descricao}"
     
 class Lista_planejamento(models.Model):
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     setor = models.ForeignKey(Setores, on_delete=models.CASCADE)
-class Listaplanejamento(models.Model):
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    setor = models.ForeignKey(Setor, on_delete=models.CASCADE)
     descricao = models.TextField()
     data_criacao = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=50, choices=[("Aberto", "aberto"), ("Fechado", "fechado")])
@@ -94,6 +77,6 @@ class Itens_lista(models.Model):
     preco_unitario = models.DecimalField(max_digits=10, decimal_places=2)
     observacao = models.TextField(blank=True, null=True)
     
-
     def __str__(self):
-        return f"{self.item} - {self.quantidade}"
+        return f"{self.item.descricao} - {self.quantidade}"
+    
